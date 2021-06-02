@@ -1,0 +1,138 @@
+{
+    "exercises": [
+        {
+            "id": 1,
+            "name": "Chest Press",
+            "muscleGroup": "Chest",
+            "workoutDescription": "Lie back on a bench holding a dumbbell in each hand just to the sides of your shoulders. Your palms should be facing towards your feet in the starting position, although if you have shoulder issues then switch to a neutral grip, where the palms face each other. Press the weights above your chest by extending your elbows until your arms are straight, then bring the weights back down slowly. To take advantage of the range of movement offered by using dumbbells rather than a barbell, take the weights down past your shoulders and bring them closer together at the top of the movement. Don’t touch them at the top, though, because that will take some of the strain off your muscles.",
+            "equpipmentNeeded": "Dumbbells",
+            "image": "https://lh3.googleusercontent.com/proxy/9vLCIKYTBiYk1n0AoM2Jk0CJoQ0N4HMNVottmEjAs1l1zQZ_AKsiHJSrQhppniXaLaIdKDz5BNMDbwf49PYFcQg_moQkYw9JIFfE99XqQFfn_VkL3XFvQsXeigwZi3xiRGU"
+        },
+
+        {
+            "id": 2,
+            "name": "Push-Ups",
+            "muscleGroup": "Chest",
+            "workoutDescription": "Start in a high plank with your palms flat, hands shoulder-width apart, shoulders stacked directly above your wrists, legs extended behind you, and your core and glutes engaged. Bend your elbows and lower your chest to the floor. Push through the palms of your hands to straighten your arms.",
+            "equpipmentNeeded": "None",
+            "image": "https://loseyoself.files.wordpress.com/2015/01/push-up.png"
+        },
+
+        {
+            "id": 3,
+            "name": "Dumbbell Flyes",
+            "muscleGroup": "Chest",
+            "workoutDescription": "Lie with your head and shoulders supported and your feet flat on the floor. Hold the dumbbells directly above your chest, palms facing each other, then lower the weights in an arc out to the sides as far as is comfortable. Use your pectoral muscles to reverse the movement back to the start. Keep a slight bend in your elbows throughout and don’t arch your back.",
+            "equpipmentNeeded": "Dumbbells",
+            "image": "https://lh3.googleusercontent.com/proxy/ZaZLj6Sxt7F9TbpoNURB8zjcqsPhR2PgQMtrslU5T0kQrfdYG-v7vJOwEhxdy4eey2rLRRZ2JlRmW-NDWxgV-6Lho6nxALVPp9oa0DyRRvSPnw"
+        },
+
+        {
+            "id": 4,
+            "name": "Pull-Ups",
+            "muscleGroup": "Back",
+            "workoutDescription": "Grab the pullup bar with your palms down (shoulder-width grip). Hang to the pullup-bar with straight arms and your legs off the floor. Pull yourself up by pulling your elbows down to the floor. Go all the way up until your chin passes the be bar. Lower yourself until your arms are straight.",
+            "equpipmentNeeded": "Pull-up Bar",
+            "image": "https://www.allamericantraining.com/wp-content/uploads/2016/04/pull-ups-300x300.png"
+        },
+
+        {
+            "id": 5,
+            "name": "Bent Over Dumbbell Row",
+            "muscleGroup": "Back",
+            "workoutDescription": "Assume a standing position while holding a dumbbell in each hand with a neutral grip. Hinge forward until your torso is roughly parallel with the floor (or slightly above) and then begin the movement by driving the elbows behind the body while retracting the shoulder blades. Pull the dumbbells towards your body until the elbows are at (or just past) the midline and then slowly lower the dumbbells back to the starting position under control.",
+            "equpipmentNeeded": "Dumbbells",
+            "image": "https://computerscience.johncabot.edu/mscaramastra/F2017/CS130-2/Petrucci/THE%20STRONGER%20THE%20HAPPIER/singlerower.gif"
+        },
+
+        {
+            "id": 6,
+            "name": "Dumbbell Dead Lifts",
+            "muscleGroup": "Back",
+            "workoutDescription": "Pick up a pair of dumbbells with an overhand grip and hold them in front of your sides. Stand with your knees slightly bent, and your feet placed shoulder-width apart. Bend at the hips and knees, lowering your torso until it’s almost parallel with the floor. Allow your arms to hang down in front of your knees and shins. Make sure you keep your back in a neutral position, taking care not to round it. You should lower yourself into position slowly, in a controlled manner. From this position, stand up straight without changing the shape of your back. Famatumi recommends squeezing your glutes as you straight, pushing through the ball and heel of your foot.",
+            "equpipmentNeeded": "Dumbbells",
+            "image": "https://lh3.googleusercontent.com/proxy/h8cje-itHki51tQfnrO2-OODq8v5R8-i_g4pD_KvxT_OBvOKEeK_-BU8x2W39d6PFfDpBWRUmVenHACvnyn712lu4xDiq_HJN_4zZK9YztwCZricz7UseQd06jAZatJra7lsPwuOr2TBP2DqD7I"
+        },
+
+        {
+            "id": 7,
+            "name": "Sit-Ups",
+            "muscleGroup": "Abs",
+            "workoutDescription": "Lie face-up on the floor. Bend your knees so your feet are flat on the floor. Plant your feet firmly. Cross your arms over your chest. Your left hand should rest on your right shoulder and vice versa. Don’t put your hands behind your head, as this can cause you to pull on your neck. Use your ab muscles to lift your back off of the ground. Your tailbone and hips should remain static and pressed into the floor until you’re fully upright. Lower yourself back to the starting position with control.",
+            "equpipmentNeeded": "None",
+            "image": "https://lh3.googleusercontent.com/proxy/Gg4x2slCFvgmogB04kGeIZXP6tsEP4wA6hEUWKIxFHwQItJSSjDD57bcDvWdPWT1Wsiyaxpeg_t0ujPXxold4W7IumH4A-W3g13bw_4kaC6b4-O34ffCJwubQl-kNdHD30IzrCAGX9p5tgD89MmAteMjXdOAbIKIWvaJ5g"
+        },
+
+        {
+            "id": 8,
+            "name": "Plank",
+            "muscleGroup": "Abs",
+            "workoutDescription": "Plant hands directly under shoulders (slightly wider than shoulder width) like you’re about to do a push-up. Ground toes into the floor and squeeze glutes to stabilize your body. Your legs should be working, too — be careful not to lock or hyperextend your knees. Neutralize your neck and spine by looking at a spot on the floor about a foot beyond your hands. Your head should be in line with your back. Hold the position for desired time. As you get more comfortable with the move, hold your plank for as long as possible without compromising your form or breath.",
+            "equpipmentNeeded": "None",
+            "image": "https://chasingmydreamsbucketlist.files.wordpress.com/2016/09/plank-diagram.jpg?w=300"
+        },
+
+        {
+            "id": 9,
+            "name": "Hanging Leg Raises",
+            "muscleGroup": "Abs",
+            "workoutDescription": "Grasp a bar above your head. Tilt your pelvis slightly backward. Engage your abdominals and hip flexors to lift your feet off the ground by raising your legs outward in front of you, keeping them straight. Exhale while lifting the legs. Raise your legs to the level you are able to do with good form. Aim to raise them parallel to the ground (hip bent 90 degrees) or a little higher. Slowly lower your legs back down to vertical, inhaling. Maintain the posterior pelvic tilt even at the bottom of the movement.",
+            "equpipmentNeeded": "Pull-up Bar",
+            "image": "https://www.thehealthsite.com/wp-content/uploads/2013/12/hanging-leg-raise-300x270.jpg"
+        },
+
+        {
+            "id": 10,
+            "name": "Bicep Curl",
+            "muscleGroup": "Arms",
+            "workoutDescription": "Stand holding a dumbbell in each hand with your arms hanging by your sides. Ensure your elbows are close to your torso and your palms facing forward. Keeping your upper arms stationary, exhale as you curl the weights up to shoulder level while contracting your biceps. Hold the weight at shoulder height for a brief pause, then inhale as you slowly lower back to the start position.",
+            "equpipmentNeeded": "Dumbbells",
+            "image": "https://2.bp.blogspot.com/-5JEX0Kf12YI/Vxp1VJfuQSI/AAAAAAAABOY/h6jR_LmlCfo-2Oe8G7By0nsHs0gnK2knwCLcB/s1600/standing-dumbbell-curls.png"
+        },
+
+        {
+            "id": 11,
+            "name": "Standing Dumbbell Tricep Extension",
+            "muscleGroup": "Arms",
+            "workoutDescription": "Stand tall and hold a dumbbell with both hands directly above your head. Slowly flex your elbows and lower the weight behind your head as you keep your upper arms still. Extend your arms and repeat.",
+            "equpipmentNeeded": "Dumbbells",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Standing-triceps-extension-2-2.gif"
+        },
+
+        {
+            "id": 12,
+            "name": "Single Arm Shoulder Press",
+            "muscleGroup": "Arms",
+            "workoutDescription": "Stand upright and keep the back straight. Hold the dumbbell at the shoulder with an overhand grip. Thumb should be on the inside and knuckles facing up. Raise the weight above the head in a controlled motion while exhaling. Pause at the top of the motion. Return the dumbbell to the shoulder while inhaling.",
+            "equpipmentNeeded": "Dumbbells",
+            "image": "http://2.bp.blogspot.com/-DcBW53ssWz8/Un3VqpHGoUI/AAAAAAAAAaw/f227Fppy7sY/s1600/Dumbbell+One-Arm+Shoulder+Press.jpg"
+        },
+
+        {
+            "id": 13,
+            "name": "Lunges",
+            "muscleGroup": "Legs",
+            "workoutDescription": "Stand tall with feet hip-width apart. Engage your core. Take a big step forward with right leg. Start to shift your weight forward so heel hits the floor first. Lower your body until right thigh is parallel to the floor and right shin is vertical. It’s OK if knee shifts forward a little as long as it doesn’t go past right toe. If mobility allows, lightly tap left knee to the floor while keeping weight in right heel. Press into right heel to drive back up to starting position. Repeat on other side.",
+            "equpipmentNeeded": "Dumbbells",
+            "image": "http://1.bp.blogspot.com/-lpb98BCGLJg/Tqq42H8AeSI/AAAAAAAAAYg/wjHmuog8vd8/s1600/Walking-lunges.png"
+        },
+
+        {
+            "id": 14,
+            "name": "Sumo Squats",
+            "muscleGroup": "Legs",
+            "workoutDescription": "Stand with your feet wider than shoulder-width apart. Your toes should be pointing slightly out (approx. 45 degree angles). Grasp a single dumbbell with both hands, letting it hang naturally between your legs. Keep your arms stationary during the entire movement. Slowly bend the knees and lower your legs until your thighs are parallel to the floor. Make sure to inhale as this is the eccentric part of the exercise. Press mainly with the heel of the foot to bring the body back to the starting position while exhaling.",
+            "equpipmentNeeded": "Dumbbells",
+            "image": "https://lh3.googleusercontent.com/proxy/IhdVEJItbdCEwslCwUl95fIaF0LfLFFdqk6Hy7Z60deMFppFwHCgmCbpx1v-mi7vytHa-_ej-nLk0GVgwdbbjw5zNJQFTTjDTWbHM3e88S0"
+        },
+
+        {
+            "id": 15,
+            "name": "Bridges",
+            "muscleGroup": "Legs",
+            "workoutDescription": "Lie on your back with your hands at your sides, knees bent, and feet flat on the floor under your knees. Tighten your abdominal and buttock muscles by pushing your low back into the ground before you push up. Raise your hips to create a straight line from your knees to shoulders. Squeeze your core and pull your belly button back toward your spine. Hold for 20 to 30 seconds, and then return to your starting position.",
+            "equpipmentNeeded": "None",
+            "image": "https://www.stockhype.ch/wp-content/uploads/2020/06/bridge_2.jpg"
+        }
+    ]
+}
