@@ -5,7 +5,12 @@ export default class ExerciseCardContainer extends Component {
 
     handleExerciseCards = () => {
         return this.props.exercises.map(exercise => {
-            return <ExerciseCard key={exercise.id} exercise={exercise} addWorkout={this.props.addWorkout} />
+            return <ExerciseCard
+                key={exercise.id}
+                exercise={exercise}
+                addWorkout={this.props.addWorkout}
+                favorite={this.props.favorite}
+            />
         })
     }
 

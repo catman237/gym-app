@@ -7,7 +7,8 @@ export default class App extends Component {
 
   state = {
     "exercises": [],
-    "yourWorkouts": []
+    "yourWorkouts": [],
+    "favoriteWorkout": []
   }
 
   componentDidMount() {
@@ -18,6 +19,11 @@ export default class App extends Component {
           "exercises": exercise
         })
       })
+  }
+
+  favoriteWorkout = (clickedWorkout) => {
+    const newFavorite = [...this.state.favoriteWorkout, clickedWorkout]
+    this.setState({ favoriteWorkout: newFavorite })
   }
 
   removeWorkout = (clickedWorkout) => {
