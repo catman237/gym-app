@@ -5,13 +5,12 @@ function ExerciseCard(props) {
     const handleWorkout = () => {
         if (props.addWorkout) {
             props.addWorkout(props.exercise)
-        } else {
-            props.removeWorkout(props.exercise)
         }
     }
-    function favoriteCounter() {
-        props.favorite()
-    }
+    
+function readMore() {
+    console.log('clicked')
+}
     return (
         <div className='card' onClick={handleWorkout}>
             <div className='card-inner'>

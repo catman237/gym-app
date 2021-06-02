@@ -55,7 +55,7 @@ code {
   z-index: 1;
 }
 
-.card-container .card {
+.card {
   position: relative;
   width: 280px;
   height: 400px;
@@ -74,17 +74,17 @@ code {
   backdrop-filter: blur(5px);
 }
 
-.card-container .card:hover {
+.card:hover {
   cursor: pointer;
   box-shadow: 0px 0px 20px 1px rgb(53, 92, 175);
 }
 
-.card-container .card .card-content {
+.card-content {
   padding: 20px;
   text-align: center;
 }
 
-.card-container .card .card-content .weight {
+.weight {
   position: absolute;
   transform: translateY(150px);
   bottom: -10px;
@@ -95,24 +95,24 @@ code {
   transition: 0.5s;
 }
 
-.card-container .card:hover .card-content .weight {
+.card:hover .card-content .weight {
   transform: translateY(-265px);
   opacity: 1.5;
 }
 
-.card-container .card .card-content .exercise-name {
+.exercise-name {
   font-size: 1.8em;
   color: #fff;
   z-index: 1;
 }
 
-.card-container .card .card-content h4 {
+h4 {
   font-size: 1em;
   color: #fff;
   font-weight: 300;
 }
 
-.card-container .card .card-content button {
+button {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
@@ -160,12 +160,12 @@ code {
   backdrop-filter: blur(5px);
 }
 
-.your-exercises .card .card-content {
+.your-exercises .card-content {
   padding: 20px;
   text-align: center;
 }
 
-.your-exercises .card .card-content .weight {
+.your-exercises .weight {
   position: absolute;
   transform: translateY(150px);
   bottom: -10px;
@@ -176,24 +176,29 @@ code {
   transition: 0.5s;
 }
 
+.your-exercises .card:hover .card-content .weight {
+  transform: translateY(-55px);
+  opacity: 1.5;
+}
+
+
 .your-exercises .card:hover {
   cursor: pointer;
 }
 
-.your-exercises .card .card-content .exercise-name {
+.your-exercises .exercise-name {
   font-size: 1.8em;
   color: #fff;
   z-index: 1;
 }
 
-.your-exercises .card .card-content h4 {
+.your-exercises h4 {
   font-size: 1em;
   color: #fff;
   font-weight: 300;
 }
 
-.your-exercises .card .card-content button {
-  visibility: hidden;
+.your-exercises button {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
@@ -212,4 +217,75 @@ code {
   position: absolute;
   top: 0;
   padding-top: 10px;
+}
+
+.your-exercises .green-card {
+  position: relative;
+  width: 140px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(4, 160, 25, 0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.your-exercises .green-card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.your-exercises .green-weight {
+  position: absolute;
+  transform: translateY(-55px);
+  bottom: -10px;
+  right: 10px;
+  font-size: 7em;
+  color: rgba(255, 255, 255, 0.35);
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.your-exercises .green-card:hover .green-card-content .green-weight {
+  transform: translateY(-55px);
+  opacity: 1.5;
+}
+
+
+.your-exercises .green-card:hover {
+  cursor: pointer;
+}
+
+.your-exercises .green-exercise-name {
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+}
+
+.your-exercises h4 {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+.your-exercises .green-flip-button {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
