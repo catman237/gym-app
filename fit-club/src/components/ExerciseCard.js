@@ -12,7 +12,6 @@ class ExerciseCard extends React.Component {
             this.props.addWorkout(this.props.exercise)
         }
     }
-<<<<<<< HEAD
 
     readMore = (e) => {
         e.stopPropagation()
@@ -35,22 +34,6 @@ class ExerciseCard extends React.Component {
                             <h4 className='equipment'>{this.props.exercise.equpipmentNeeded}</h4>
                             <button className='flip-button' onClick={this.readMore}>Read More</button>
                         </div>
-=======
-    
-function readMore() {
-    console.log('clicked')
-}
-    return (
-        <div className='card' onClick={handleWorkout}>
-            <div className='card-inner'>
-                <div className='card-front'>
-                    <div className='card-content'>
-                        <h2 className='weight'>💪🏼</h2>
-                        <h2 className='exercise-name'>{props.exercise.name}</h2>
-                        <h4 className='muscle'>{props.exercise.muscleGroup}</h4>
-                        <h4 className='equipment'>{props.exercise.equpipmentNeeded}</h4>
-                        <button className='flip-button' onClick={() => favoriteCounter}>Read More</button>
->>>>>>> e5accd1aa07f1efec20a7e03b76152286adba4b0
                     </div>
 
                     :
