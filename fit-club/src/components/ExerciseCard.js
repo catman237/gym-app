@@ -5,10 +5,9 @@ function ExerciseCard(props) {
     const handleWorkout = () => {
         if (props.addWorkout) {
             props.addWorkout(props.exercise)
-        } else {
-            props.removeWorkout(props.exercise)
         }
     }
+    
 function readMore() {
     console.log('clicked')
 }
