@@ -7,7 +7,8 @@ export default class App extends Component {
 
   state = {
     "exercises": [],
-    "yourWorkouts": []
+    "yourWorkouts": [],
+    "favoriteWorkout": []
   }
 
   componentDidMount() {
@@ -18,6 +19,11 @@ export default class App extends Component {
           "exercises": exercise
         })
       })
+  }
+
+  favoriteWorkout = (clickedWorkout) => {
+    const newFavorite = [...this.state.favoriteWorkout, clickedWorkout]
+    this.setState({ favoriteWorkout: newFavorite })
   }
 
   removeWorkout = (clickedWorkout) => {
@@ -40,8 +46,16 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <YourExercisesContainer yourWorkouts={this.state.yourWorkouts} removeWorkout={this.removeWorkout} />
-        <ExerciseCardContainer exercises={this.state.exercises} addWorkout={this.addWorkout} />
+        <YourExercisesContainer 
+        yourWorkouts={this.state.yourWorkouts} 
+        removeWorkout={this.removeWorkout} 
+        />
+
+        <ExerciseCardContainer 
+        exercises={this.state.exercises} 
+        addWorkout={this.addWorkout} 
+        favorite={this.favoriteWorkout}
+        />
       </div>
     )
   }

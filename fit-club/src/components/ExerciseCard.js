@@ -9,9 +9,9 @@ function ExerciseCard(props) {
             props.removeWorkout(props.exercise)
         }
     }
-function readMore() {
-    console.log('clicked')
-}
+    function favoriteCounter() {
+        props.favorite()
+    }
     return (
         <div className='card' onClick={handleWorkout}>
             <div className='card-inner'>
@@ -21,7 +21,7 @@ function readMore() {
                         <h2 className='exercise-name'>{props.exercise.name}</h2>
                         <h4 className='muscle'>{props.exercise.muscleGroup}</h4>
                         <h4 className='equipment'>{props.exercise.equpipmentNeeded}</h4>
-                        <button className='flip-button' onClick={readMore}>Read More</button>
+                        <button className='flip-button' onClick={() => favoriteCounter}>Read More</button>
                     </div>
                 </div>
                 {/* <div className='card'>
