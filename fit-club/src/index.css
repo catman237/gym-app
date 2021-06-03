@@ -248,7 +248,7 @@ h4 {
   cursor: pointer;
 }
 
-.card-back button {
+.card-back .flip-button  {
   position: absolute;
   left: 0;
   top: 0;
@@ -388,8 +388,8 @@ p {
 }
 
 .your-exercises h3 {
-  padding-bottom: 6rem;
-  padding-top: 1rem;
+  padding-bottom: 4.5rem;
+  padding-top: .5rem;
   font-size: 1em;
   color: #fff;
   font-weight: 300;
@@ -397,7 +397,7 @@ p {
 
 .your-exercises button {
   position: absolute;
-  bottom: 25.25%;
+  bottom: 26%;
   left: 35%;
   display: inline-block;
   padding: 8px 20px;
@@ -508,7 +508,7 @@ p {
 
 .your-exercises .green-flip-button {
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   left: 15%;
   display: inline-block;
   padding: 8px 20px;

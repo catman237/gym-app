@@ -14,6 +14,7 @@ export default class App extends Component {
   componentDidMount() {
     fetch('http://localhost:3000/exercises')
       .then(res => res.json())
+
       .then(exercise => {
         this.setState({
           "exercises": exercise
@@ -39,16 +40,17 @@ export default class App extends Component {
     })
       .then(res => res.json())
       .then(updatedWorkout => {
-    const removeWorkout = this.state.yourWorkouts.filter(workout => {
-      return workout.id !== updatedWorkout.id
-    })
-    this.setState({
-      yourWorkouts: removeWorkout
-    })
-  })
+        const removeWorkout = this.state.yourWorkouts.filter(workout => {
+          return workout.id !== updatedWorkout.id
+        })
+        this.setState({
+          yourWorkouts: removeWorkout
+        })
+      })
   }
 
   addWorkout = (clickedWorkout) => {
+    console.log(clickedWorkout)
     if (!this.state.yourWorkouts.includes(clickedWorkout)) {
       this.setState({
         yourWorkouts: [...this.state.yourWorkouts, clickedWorkout]
@@ -57,7 +59,6 @@ export default class App extends Component {
   }
 
   greenCard = (clickedWorkout) => {
-
     fetch('http://localhost:3000/exercises/' + clickedWorkout.id, {
       method: 'PATCH',
       headers: {
@@ -80,16 +81,40 @@ export default class App extends Component {
         this.setState({
           yourWorkouts: yourWorkouts
         })
-        
+
       })
+
+  }
+
+  submitWorkoutInfo = (clickedWorkout) => {
+    console.log('clicked submit button', clickedWorkout.sets)
+    fetch('http://localhost:3000/exercises/' + clickedWorkout.id, {
+      method: 'PATCH',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        sets: clickedWorkout.sets
+      })
+    })
 
   }
 
   render() {
     return (
       <div>
-        <YourExercisesContainer exerciseIsDone={this.state.exerciseIsDone} greenCard={this.greenCard} yourWorkouts={this.state.yourWorkouts} removeWorkout={this.removeWorkout} />
-        <ExerciseCardContainer exercises={this.state.exercises} addWorkout={this.addWorkout} />
+        <YourExercisesContainer
+          exerciseIsDone={this.state.exerciseIsDone}
+          greenCard={this.greenCard}
+          yourWorkouts={this.state.yourWorkouts}
+          removeWorkout={this.removeWorkout}
+        />
+        <ExerciseCardContainer
+          exercises={this.state.exercises}
+          addWorkout={this.addWorkout}
+          submitWorkoutInfo={this.submitWorkoutInfo}
+        />
       </div>
     )
   }

@@ -7,10 +7,19 @@ export default class YourExercisesContainer extends Component {
     renderCards = () => {
         return this.props.yourWorkouts.map(exercise => {
             if (exercise.exerciseIsDone) {
-                return <YourCompletedExercises key={exercise.id} exercise={exercise} removeWorkout={this.props.removeWorkout} greenCard={this.props.greenCard} />
+                return <YourCompletedExercises
+                    key={exercise.id} exercise={exercise}
+                    removeWorkout={this.props.removeWorkout}
+                    greenCard={this.props.greenCard}
+                />
 
             } else {
-                return <YourExerciseCards key={exercise.id} exercise={exercise} removeWorkout={this.props.removeWorkout} greenCard={this.props.greenCard} />
+                return <YourExerciseCards
+                    key={exercise.id}
+                    exercise={exercise}
+                    removeWorkout={this.props.removeWorkout}
+                    greenCard={this.props.greenCard}
+                />
             }
         })
     }

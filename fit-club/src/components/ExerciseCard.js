@@ -12,7 +12,14 @@ class ExerciseCard extends React.Component {
     handleWorkout = () => {
         if (this.props.addWorkout) {
             this.props.addWorkout(this.props.exercise)
+            this.props.submitWorkoutInfo(this.props.exercise)
         }
+    }
+
+    handleWorkoutInfo = (e) => {
+        e.preventDefault()
+        e.stopPropagation()
+        this.props.submitWorkoutInfo(this.props.exercise)
     }
 
     readMore = (e) => {
@@ -21,17 +28,30 @@ class ExerciseCard extends React.Component {
             isFlipped: !this.state.isFlipped
         })
     }
-    
+
     render() {
         return (
 
-                    <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
+            <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
 
-                    <ExerciseCardFront addWorkout={this.props.addWorkout} favorite={this.props.favorite} exercise={this.props.exercise} handleWorkout={this.handleWorkout} readMore={this.readMore} />
+                <ExerciseCardFront
+                    addWorkout={this.props.addWorkout}
+                    favorite={this.props.favorite}
+                    exercise={this.props.exercise}
+                    handleWorkout={this.handleWorkout}
+                    readMore={this.readMore} 
+                    />
 
-                    <ExerciseCardBack addWorkout={this.props.addWorkout} favorite={this.props.favorite} exercise={this.props.exercise} handleWorkout={this.handleWorkout} readMore={this.readMore} />
+                <ExerciseCardBack
+                    addWorkout={this.props.addWorkout}
+                    favorite={this.props.favorite}
+                    exercise={this.props.exercise}
+                    handleWorkout={this.handleWorkout}
+                    readMore={this.readMore} 
+                    submitWorkoutInfo={this.handleWorkoutInfo}
+                    />
 
-                    </ReactCardFlip>
+            </ReactCardFlip>
         )
 
     }
