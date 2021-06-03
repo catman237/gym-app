@@ -7,7 +7,6 @@ function YourExerciseCards(props) {
     }
 
     const handleGreenCard = (e) => {
-        console.log('clicked')
         e.stopPropagation()
         props.greenCard(props.exercise)
     }
@@ -19,7 +18,7 @@ function YourExerciseCards(props) {
                     <div className='card-content'>
                         <h2 className='weight'>💪🏼</h2>
                         <h2 className='exercise-name'>{props.exercise.name}</h2>
-                        <h4 className='muscle'>{props.exercise.muscleGroup}</h4>
+                        <h3 className='muscle'>{props.exercise.muscleGroup}</h3>
                         <button className='flip-button' onClick={handleGreenCard}>DONE🥵</button>
                     </div>
                 </div>

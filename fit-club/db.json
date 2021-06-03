@@ -38,7 +38,7 @@
     },
     {
       "id": 5,
-      "name": "Bent Over Dumbbell Row",
+      "name": "Bent Over Row",
       "muscleGroup": "Back",
       "workoutDescription": "Assume a standing position while holding a dumbbell in each hand with a neutral grip. Hinge forward until your torso is roughly parallel with the floor (or slightly above) and then begin the movement by driving the elbows behind the body while retracting the shoulder blades. Pull the dumbbells towards your body until the elbows are at (or just past) the midline and then slowly lower the dumbbells back to the starting position under control.",
       "equpipmentNeeded": "Dumbbells",
@@ -92,7 +92,7 @@
     },
     {
       "id": 11,
-      "name": "Standing Dumbbell Tricep Extension",
+      "name": "Standing Tricep Extension",
       "muscleGroup": "Arms",
       "workoutDescription": "Stand tall and hold a dumbbell with both hands directly above your head. Slowly flex your elbows and lower the weight behind your head as you keep your upper arms still. Extend your arms and repeat.",
       "equpipmentNeeded": "Dumbbells",
@@ -101,7 +101,7 @@
     },
     {
       "id": 12,
-      "name": "Single Arm Shoulder Press",
+      "name": "One Arm Shoulder Press",
       "muscleGroup": "Arms",
       "workoutDescription": "Stand upright and keep the back straight. Hold the dumbbell at the shoulder with an overhand grip. Thumb should be on the inside and knuckles facing up. Raise the weight above the head in a controlled motion while exhaling. Pause at the top of the motion. Return the dumbbell to the shoulder while inhaling.",
       "equpipmentNeeded": "Dumbbells",

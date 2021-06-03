@@ -13,7 +13,7 @@ function YourCompletedExercises(props) {
                     <div className='green-card-content'>
                         <h2 className='green-weight'>💪🏼</h2>
                         <h2 className='green-exercise-name'>{props.exercise.name}</h2>
-                        <h4 className='green-muscle'>{props.exercise.muscleGroup}</h4>
+                        <h3 className='green-muscle'>{props.exercise.muscleGroup}</h3>
                         <button className='green-flip-button' onClick={handleWorkout}>Remove Workout</button>
                     </div>
                 </div>
