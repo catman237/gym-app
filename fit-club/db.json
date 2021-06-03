@@ -8,9 +8,9 @@
       "equpipmentNeeded": "Dumbbells",
       "image": "https://lh3.googleusercontent.com/proxy/dgELPHmjpjIeakhJoudhip-njuQBwV8y8JAMBw1eCGzfBkRJlBvEbCQ0vfrsjQManm64tXT0rZH6cg_yq9xboAOkObsUrNs2HIQZwRiwFJBzhg0tVWrOqjQjHjamIjw-Va8",
       "exerciseIsDone": false,
-      "sets": 0,
-      "reps": 0,
-      "weight": 0
+      "sets": "3",
+      "reps": "8",
+      "weight": "10"
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       "equpipmentNeeded": "None",
       "image": "https://loseyoself.files.wordpress.com/2015/01/push-up.png",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 13,
       "reps": 0,
       "weight": 0
     },
@@ -32,7 +32,7 @@
       "equpipmentNeeded": "Dumbbells",
       "image": "https://lh3.googleusercontent.com/proxy/EYS_tKXKvMWgtT2Yd7Fd8lz9WvG5n7pui6eLP6lHxsiXdp0SNBxydXGrvvXAAqlSZVDzG1SPBnH9rW2faK7YGERn2HlN7DNmMU98Zsg-y8Qyj5wzSxv_uK15PcVXYcxcEJvUdPv5ZffX5L0F0R8gHaD7UhENfJ6bGA",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 12,
       "reps": 0,
       "weight": 0
     },
@@ -44,7 +44,7 @@
       "equpipmentNeeded": "Pull-up Bar",
       "image": "https://www.allamericantraining.com/wp-content/uploads/2016/04/pull-ups-300x300.png",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 11,
       "reps": 0,
       "weight": 0
     },
@@ -56,7 +56,7 @@
       "equpipmentNeeded": "Dumbbells",
       "image": "https://computerscience.johncabot.edu/mscaramastra/F2017/CS130-2/Petrucci/THE%20STRONGER%20THE%20HAPPIER/singlerower.gif",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 11,
       "reps": 0,
       "weight": 0
     },
@@ -68,7 +68,7 @@
       "equpipmentNeeded": "Dumbbells",
       "image": "https://goprimalstrength.com/wp-content/uploads/2018/03/IMG_4506.jpg",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 13,
       "reps": 0,
       "weight": 0
     },
@@ -80,7 +80,7 @@
       "equpipmentNeeded": "None",
       "image": "https://lh3.googleusercontent.com/proxy/vsLXFVKcvwFmwKOG3sVrYKDdyAYyuxZ_7FPJHDIMTApl7a4vE1BkvuA4KK4d6ab4qYX2I9WDYZUksiB22y87zYSBJ9_5Q7H1Epa6QLKS4CpDV42Qs4nKItz-UhMz0b0_U7-98yMll3GGfkbf3pdT5W9Pu9YF-k6daWNJKg",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 13,
       "reps": 0,
       "weight": 0
     },
@@ -92,7 +92,7 @@
       "equpipmentNeeded": "None",
       "image": "https://chasingmydreamsbucketlist.files.wordpress.com/2016/09/plank-diagram.jpg?w=300",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 13,
       "reps": 0,
       "weight": 0
     },
@@ -104,7 +104,7 @@
       "equpipmentNeeded": "Pull-up Bar",
       "image": "https://www.thehealthsite.com/wp-content/uploads/2013/12/hanging-leg-raise-300x270.jpg",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 11,
       "reps": 0,
       "weight": 0
     },
@@ -116,7 +116,7 @@
       "equpipmentNeeded": "Dumbbells",
       "image": "https://2.bp.blogspot.com/-5JEX0Kf12YI/Vxp1VJfuQSI/AAAAAAAABOY/h6jR_LmlCfo-2Oe8G7By0nsHs0gnK2knwCLcB/s1600/standing-dumbbell-curls.png",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 11,
       "reps": 0,
       "weight": 0
     },
@@ -128,7 +128,7 @@
       "equpipmentNeeded": "Dumbbells",
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Standing-triceps-extension-2-2.gif",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 11,
       "reps": 0,
       "weight": 0
     },
@@ -140,7 +140,7 @@
       "equpipmentNeeded": "Dumbbells",
       "image": "http://2.bp.blogspot.com/-DcBW53ssWz8/Un3VqpHGoUI/AAAAAAAAAaw/f227Fppy7sY/s1600/Dumbbell+One-Arm+Shoulder+Press.jpg",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 11,
       "reps": 0,
       "weight": 0
     },
@@ -152,7 +152,7 @@
       "equpipmentNeeded": "Dumbbells",
       "image": "http://1.bp.blogspot.com/-lpb98BCGLJg/Tqq42H8AeSI/AAAAAAAAAYg/wjHmuog8vd8/s1600/Walking-lunges.png",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 13,
       "reps": 0,
       "weight": 0
     },
@@ -164,7 +164,7 @@
       "equpipmentNeeded": "Dumbbells",
       "image": "https://lh3.googleusercontent.com/proxy/oEmSdlIpWmB93PSsLTe3MkhzGG6ubVb_kh94Hf6zThgpjixk9mDETEnZnYOCb_Odr2I-a9Je9VlkAeNHezmoyyIHetcGrvKyKmax2Iy9GtU",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 13,
       "reps": 0,
       "weight": 0
     },
@@ -176,7 +176,7 @@
       "equpipmentNeeded": "None",
       "image": "https://www.stockhype.ch/wp-content/uploads/2020/06/bridge_2.jpg",
       "exerciseIsDone": false,
-      "sets": 0,
+      "sets": 13,
       "reps": 0,
       "weight": 0
     }

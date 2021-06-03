@@ -9,10 +9,10 @@ class ExerciseCard extends React.Component {
         isFlipped: false
     }
 
-    handleWorkout = () => {
+    handleWorkout = (repsSetsWeight) => {
         if (this.props.addWorkout) {
-            this.props.addWorkout(this.props.exercise)
-            this.props.submitWorkoutInfo(this.props.exercise)
+            this.props.addWorkout(this.props.exercise, repsSetsWeight)
+            this.props.submitWorkoutInfo(this.props.exercise, repsSetsWeight)
         }
     }
 
@@ -39,17 +39,17 @@ class ExerciseCard extends React.Component {
                     favorite={this.props.favorite}
                     exercise={this.props.exercise}
                     handleWorkout={this.handleWorkout}
-                    readMore={this.readMore} 
-                    />
+                    readMore={this.readMore}
+                />
 
                 <ExerciseCardBack
                     addWorkout={this.props.addWorkout}
                     favorite={this.props.favorite}
                     exercise={this.props.exercise}
                     handleWorkout={this.handleWorkout}
-                    readMore={this.readMore} 
+                    readMore={this.readMore}
                     submitWorkoutInfo={this.handleWorkoutInfo}
-                    />
+                />
 
             </ReactCardFlip>
         )

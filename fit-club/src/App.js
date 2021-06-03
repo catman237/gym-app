@@ -49,7 +49,7 @@ export default class App extends Component {
       })
   }
 
-  addWorkout = (clickedWorkout) => {
+  addWorkout = (clickedWorkout,repsSetsWeight) => {
     console.log(clickedWorkout)
     if (!this.state.yourWorkouts.includes(clickedWorkout)) {
       this.setState({
@@ -86,17 +86,16 @@ export default class App extends Component {
 
   }
 
-  submitWorkoutInfo = (clickedWorkout) => {
-    console.log('clicked submit button', clickedWorkout.sets)
+  submitWorkoutInfo = (clickedWorkout, repsSetsWeight) => {
+    console.log('reps Sets Weight', repsSetsWeight)
+    const updatedWorkout = { ...clickedWorkout, ...repsSetsWeight }
     fetch('http://localhost:3000/exercises/' + clickedWorkout.id, {
       method: 'PATCH',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        sets: clickedWorkout.sets
-      })
+      body: JSON.stringify(updatedWorkout)
     })
 
   }
