@@ -7,7 +7,7 @@ function YourCompletedExercises(props) {
     }
 
     return (
-        <div className='green-card' onClick={handleWorkout}>
+        <div className='green-card'>
             <div className='green-card-inner'>
                 <div className='green-card-front'>
                     <div className='green-card-content'>

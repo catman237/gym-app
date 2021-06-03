@@ -19,7 +19,7 @@ function YourExerciseCards(props) {
                         <h2 className='weight'>💪🏼</h2>
                         <h2 className='exercise-name'>{props.exercise.name}</h2>
                         <h3 className='muscle'>{props.exercise.muscleGroup}</h3>
-                        <button className='flip-button' onClick={handleGreenCard}>DONE🥵</button>
+                        <button className='flip-button' onClick={handleGreenCard}>DONE 🥵</button>
                     </div>
                 </div>
             </div>

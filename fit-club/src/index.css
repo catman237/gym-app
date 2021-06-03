@@ -11,6 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #161623;
+  background-image: url("https://www.abc.net.au/news/image/9606796-3x2-940x627.jpg");
 }
 
 code {
@@ -34,14 +36,26 @@ code {
 
 .card-body::before {
   content: '';
-  position: fixed;
-  top: 40%;
+  position: absolute;
+  top: 35%;
   right: 0;
   width: 100%;
   height: 100%;
   background-image: url("https://us.123rf.com/450wm/romastudio/romastudio1812/romastudio181200216/117004062-sports-equipment-on-a-black-background-top-view-motivation.jpg?ver=6");
   background-size: contain;
-  clip-path: circle(15% at 10% 25%);
+  clip-path: circle(13% at 10% 25%);
+}
+
+.card-body::after {
+  content: '';
+  position: fixed;
+  top: 60%;
+  left: 80%;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/263/239/large_2x/pattern-of-dumbbells-on-yellow-background-with-soft-shadow-3d-render-free-photo.jpg");
+  background-size: contain;
+  clip-path: circle(16% at 15% 29%);
 }
 
 .card-container {
@@ -303,7 +317,7 @@ p {
 
 .your-exercises .weight {
   position: absolute;
-  transform: translateY(155px);
+  transform: translateY(150px);
   bottom: -5px;
   right: 100px;
   font-size: 7em;
@@ -313,13 +327,56 @@ p {
 }
 
 .your-exercises .card:hover .card-content .weight {
-  transform: translateY(-155px);
+  transform: translateY(-150px);
   opacity: 1.5;
 }
 
 
 .your-exercises .card:hover {
   cursor: pointer;
+  box-shadow: 
+      0 0 .5px #dba2a2, 
+      0 0 2.5px #d1a4a4, 
+      0 0 5px #be8a8a, 
+      0 0 7.5px #af3535,
+      0 0 10px #e93b3b, 
+      0 0 13px #af3535;
+  -webkit-animation: blink2 0.7s infinite alternate;
+  animation: blink2 0.7s infinite alternate;
+}
+
+.your-exercises .card:hover .exercise-name {
+  text-shadow: 
+      0 0 .5px #dba2a2, 
+      0 0 2.5px #d1a4a4, 
+      0 0 5px #be8a8a, 
+      0 0 7.5px #af3535,
+      0 0 10px #e93b3b, 
+      0 0 13px #af3535;
+}
+
+@-webkit-keyframes blink2  {
+  100% {
+    box-shadow: 
+      0 0 .75px #dba2a2, 
+      0 0 2.5px #d1a4a4, 
+      0 0 5px #be8a8a, 
+      0 0 10px #af3535,
+      0 0 18px #e93b3b, 
+      0 0 20px #af3535;
+  }
+}
+
+@keyframes blink2 {
+  100% {
+    box-shadow: 
+    0 0 .75px #dba2a2, 
+    0 0 2.5px #d1a4a4, 
+    0 0 5px #be8a8a, 
+    0 0 10px #af3535,
+    0 0 18px #e93b3b, 
+    0 0 20px #af3535;
+  }
 }
 
 .your-exercises .exercise-name {
@@ -367,7 +424,6 @@ p {
   height: 200px;
   padding: 10px;
   margin: 10px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background: rgba(4, 160, 25, 0.5);
   overflow: hidden;
@@ -378,7 +434,41 @@ p {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
+  box-shadow: 
+      0 0 .5px #a4b6d1, 
+      0 0 2.5px #8a93be, 
+      0 0 5px #35af5e, 
+      0 0 7.5px #4fe93b,
+      0 0 10px #6caf35, 
+      0 0 13px #3be952;
+  -webkit-animation: blink3 0.7s infinite alternate;
+  animation: blink3 0.7s infinite alternate;
 }
+
+@-webkit-keyframes blink3  {
+  100% {
+    box-shadow: 
+      0 0 .75px #a4b6d1, 
+      0 0 2.5px #8a93be, 
+      0 0 5px #35af5e, 
+      0 0 10px #4fe93b,
+      0 0 18px #6caf35, 
+      0 0 20px #3be952;
+  }
+}
+
+@keyframes blink3 {
+  100% {
+    box-shadow: 
+      0 0 .75px #a4b6d1, 
+      0 0 2.5px #8a93be, 
+      0 0 5px #35af5e, 
+      0 0 10px #4fe93b,
+      0 0 18px #6caf35, 
+      0 0 20px #3be952;
+  }
+}
+
 
 .your-exercises .green-card-content {
   padding: 20px;
@@ -387,7 +477,7 @@ p {
 
 .your-exercises .green-weight {
   position: absolute;
-  transform: translateY(-55px);
+  transform: translateY(-50px);
   bottom: -5px;
   right: 10px;
   font-size: 7em;
@@ -397,17 +487,8 @@ p {
 }
 
 .your-exercises .green-card:hover .green-card-content .green-weight {
-  transform: translateY(-55px);
+  transform: translateY(-50px);
   opacity: 1.5;
-}
-
-
-.your-exercises .green-card:hover {
-  cursor: pointer;
-}
-
-.your-exercises .green-card:hover .green-exercise-name{
-  cursor: pointer;
 }
 
 .your-exercises .green-exercise-name {
@@ -439,6 +520,10 @@ p {
   border-radius: 20px;
   font-weight: 500;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.your-exercises .green-flip-button:hover {
+  cursor: pointer;
 }
 
 img {

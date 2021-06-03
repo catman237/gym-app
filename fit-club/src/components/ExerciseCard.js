@@ -1,9 +1,12 @@
 import React from 'react'
+import ExerciseCardFront from './ExerciseCardFront'
+import ExerciseCardBack from './ExerciseCardBack'
+import ReactCardFlip from 'react-card-flip'
 
 class ExerciseCard extends React.Component {
 
     state = {
-        click: false
+        isFlipped: false
     }
 
     handleWorkout = () => {
@@ -15,43 +18,20 @@ class ExerciseCard extends React.Component {
     readMore = (e) => {
         e.stopPropagation()
         this.setState({
-            click: !this.state.click
+            isFlipped: !this.state.isFlipped
         })
     }
+    
     render() {
         return (
-            <div>
-                {!this.state.click
 
-                    ?
+                    <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
 
-                    <div className='card-front' onClick={this.handleWorkout}>
-                        <div className='card-content'>
-                            <h2 className='weight'>💪🏼</h2>
-                            <h2 className='exercise-name'>{this.props.exercise.name}</h2>
-                            <br/>
-                            <h4 className='muscle'>Muscles Targeted: <br/>{this.props.exercise.muscleGroup}</h4>
-                            <br />
-                            <h4 className='equipment'>Equipment Needed: <br/>{this.props.exercise.equpipmentNeeded}</h4>
-                            <button className='flip-button' onClick={this.readMore}>Read More</button>
-                        </div>
-                    </div>
+                    <ExerciseCardFront addWorkout={this.props.addWorkout} favorite={this.props.favorite} exercise={this.props.exercise} handleWorkout={this.handleWorkout} readMore={this.readMore} />
 
-                    :
+                    <ExerciseCardBack addWorkout={this.props.addWorkout} favorite={this.props.favorite} exercise={this.props.exercise} handleWorkout={this.handleWorkout} readMore={this.readMore} />
 
-                    <div className='card-back' onClick={this.handleWorkout}>
-                        <div className='card-back-content'>
-                            <button className='flip-button' onClick={this.readMore}>X</button>
-                            <h2 className='exercise-name'>{this.props.exercise.name}</h2>
-                            <br/>
-                            <img src={this.props.exercise.image} alt='exercise-example' />
-                            <br/>
-                            <br/>
-                            <p className='workout-details'>{this.props.exercise.workoutDescription}</p>
-                        </div>
-                    </div>
-                }
-            </div>
+                    </ReactCardFlip>
         )
 
     }
