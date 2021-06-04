@@ -1,0 +1,4 @@
+# GymApp
+This is an app to help give you workout suggestions and also help you keep track of them. Somedays your creativity is not there to come up with your own workouts. Other days you forget you workout log. Well fear not anymore, this app is designed to be able to quickly take the place of your “normal” routine, or log.
+This was build by Greg Hughes and Tony Roscioli, the main laungue used in this project is React, but CSS is what was used to style the whole. All of the info is being patched into the back-end on update. So the next time you are at the gym and youor in a pickle give this a shot.
+In the future we plan on implementing other small features in, but there is no time line on those features. GymApp was built in roughly 30 hours over the course of 3 days. Thank you for reading!

@@ -18,7 +18,7 @@ export default class ExerciseCardBack extends Component {
         return (
             <div className='card-back'>
                 <div className='card-back-content'>
-                    <button className='flip-button' onClick={this.props.readMore}>X</button>
+                    <button className='flip-button' onClick={this.props.readMore}>↩</button>
                     <h2 className='exercise-name'>{this.props.exercise.name}</h2>
                     <br />
                     <img src={this.props.exercise.image} alt='exercise-example' />
@@ -43,7 +43,7 @@ export default class ExerciseCardBack extends Component {
                         <br />
                         <select value={this.state.weight} name="weight" className="weights" onChange={this.handleChange}>
                             <option value="0">Weight</option>
-                            <option value="0">Body</option>
+                            <option value="Body">Body</option>
                             <option value="10">10lbs</option>
                             <option value="20">20lbs</option>
                             <option value="30">30lbs</option>
@@ -59,7 +59,7 @@ export default class ExerciseCardBack extends Component {
                         className="submitButton"
                         type="submit"
                         onClick={() => this.props.handleWorkout(this.state)}
-                    >Submit</button>
+                    >Add To Workouts</button>
                 </div>
             </div>
         )

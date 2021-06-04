@@ -8,7 +8,6 @@ export default class ExerciseCardContainer extends Component {
             return <ExerciseCard
                 key={exercise.id}
                 exercise={exercise}
-                addWorkout={this.props.addWorkout}
                 favorite={this.props.favorite}
                 submitWorkoutInfo={this.props.submitWorkoutInfo}
             />

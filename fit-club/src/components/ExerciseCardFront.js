@@ -4,7 +4,7 @@ export default class ExerciseCardFront extends Component {
 
     render() {
         return (
-                <div className='card-front' onClick={this.props.handleWorkout}>
+                <div className='card-front'>
                         <div className='card-content'>
                             <h2 className='weight'>💪🏼</h2>
                             <h2 className='exercise-name'>{this.props.exercise.name}</h2>
