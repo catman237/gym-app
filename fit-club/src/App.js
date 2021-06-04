@@ -14,7 +14,6 @@ export default class App extends Component {
   componentDidMount() {
     fetch('http://localhost:3000/exercises')
       .then(res => res.json())
-
       .then(exercise => {
         this.setState({
           "exercises": exercise
@@ -49,14 +48,15 @@ export default class App extends Component {
       })
   }
 
-  addWorkout = (clickedWorkout,repsSetsWeight) => {
-    console.log(clickedWorkout)
+  addWorkout = (clickedWorkout, repsSetsWeight) => {
     if (!this.state.yourWorkouts.includes(clickedWorkout)) {
       this.setState({
         yourWorkouts: [...this.state.yourWorkouts, clickedWorkout]
       })
     }
   }
+
+
 
   greenCard = (clickedWorkout) => {
     fetch('http://localhost:3000/exercises/' + clickedWorkout.id, {
@@ -86,18 +86,28 @@ export default class App extends Component {
 
   }
 
+
+
   submitWorkoutInfo = (clickedWorkout, repsSetsWeight) => {
     console.log('reps Sets Weight', repsSetsWeight)
     const updatedWorkout = { ...clickedWorkout, ...repsSetsWeight }
     fetch('http://localhost:3000/exercises/' + clickedWorkout.id, {
       method: 'PATCH',
       headers: {
-        Accept: 'application/json',
+        'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(updatedWorkout)
     })
-
+    if (!this.state.yourWorkouts.includes(updatedWorkout)) {
+      this.setState({
+        yourWorkouts: [updatedWorkout, ...this.state.yourWorkouts]
+      }) 
+    } else {
+      this.setState({
+        yourWorkouts: [updatedWorkout, ...this.state.yourWorkouts]
+      })
+    }
   }
 
   render() {
@@ -108,6 +118,8 @@ export default class App extends Component {
           greenCard={this.greenCard}
           yourWorkouts={this.state.yourWorkouts}
           removeWorkout={this.removeWorkout}
+          submitWorkoutInfo={this.submitWorkoutInfo}
+          exercise={this.state.exercise}
         />
         <ExerciseCardContainer
           exercises={this.state.exercises}

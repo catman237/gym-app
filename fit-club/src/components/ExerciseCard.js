@@ -16,9 +16,10 @@ class ExerciseCard extends React.Component {
         }
     }
 
-    handleWorkoutInfo = (e) => {
-        e.preventDefault()
-        e.stopPropagation()
+    handleWorkoutInfo = (event) => {
+        event.preventDefault()
+        event.stopPropagation()
+        console.log(event.target.value)
         this.props.submitWorkoutInfo(this.props.exercise)
     }
 
@@ -30,6 +31,7 @@ class ExerciseCard extends React.Component {
     }
 
     render() {
+
         return (
 
             <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
@@ -48,7 +50,6 @@ class ExerciseCard extends React.Component {
                     exercise={this.props.exercise}
                     handleWorkout={this.handleWorkout}
                     readMore={this.readMore}
-                    submitWorkoutInfo={this.handleWorkoutInfo}
                 />
 
             </ReactCardFlip>

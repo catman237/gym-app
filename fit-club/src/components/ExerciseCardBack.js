@@ -9,6 +9,7 @@ export default class ExerciseCardBack extends Component {
     }
 
     handleChange = (event) => {
+        // console.log(event.target.value)
         this.setState({
             [event.target.name]: event.target.value
         })
@@ -27,7 +28,8 @@ export default class ExerciseCardBack extends Component {
                     <p className='workout-details'>{this.props.exercise.workoutDescription}</p>
                     <br />
                     <form action="submit">
-                        <select value={this.state.sets} name="sets" className="sets" onChange={this.handleChange}>
+                        <select value={this.state.sets} name="sets" className="sets" onChange={this.handleChange
+                        }>
                             <option value="0">Sets</option>
                             <option value="1">1</option>
                             <option value="3">3</option>

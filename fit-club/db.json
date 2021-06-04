@@ -10,7 +10,7 @@
       "exerciseIsDone": false,
       "sets": "3",
       "reps": "8",
-      "weight": "10"
+      "weight": "0"
     },
     {
       "id": 2,
@@ -20,8 +20,8 @@
       "equpipmentNeeded": "None",
       "image": "https://loseyoself.files.wordpress.com/2015/01/push-up.png",
       "exerciseIsDone": false,
-      "sets": 13,
-      "reps": 0,
+      "sets": 0,
+      "reps": "5",
       "weight": 0
     },
     {
@@ -68,9 +68,9 @@
       "equpipmentNeeded": "Dumbbells",
       "image": "https://goprimalstrength.com/wp-content/uploads/2018/03/IMG_4506.jpg",
       "exerciseIsDone": false,
-      "sets": 13,
-      "reps": 0,
-      "weight": 0
+      "sets": "3",
+      "reps": "10",
+      "weight": "0"
     },
     {
       "id": 7,

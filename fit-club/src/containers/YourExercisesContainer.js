@@ -8,9 +8,11 @@ export default class YourExercisesContainer extends Component {
         return this.props.yourWorkouts.map(exercise => {
             if (exercise.exerciseIsDone) {
                 return <YourCompletedExercises
-                    key={exercise.id} exercise={exercise}
+                    key={exercise.id} 
+                    exercise={exercise}
                     removeWorkout={this.props.removeWorkout}
                     greenCard={this.props.greenCard}
+                    renderWorkout={this.renderWorkout}
                 />
 
             } else {
@@ -18,6 +20,7 @@ export default class YourExercisesContainer extends Component {
                     key={exercise.id}
                     exercise={exercise}
                     removeWorkout={this.props.removeWorkout}
+                    submitWorkoutInfo={this.props.submitWorkoutInfo}
                     greenCard={this.props.greenCard}
                 />
             }
